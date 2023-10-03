@@ -1,0 +1,10 @@
+version: '3'
+services:
+  chat-pdf:
+    build:
+      context: ./  # Path to the directory containing Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - GOOGLE_API_KEY=${YOUR_GOOGLE_API_KEY}
+      - OPENAI_API_KEY=${YOUR_OPENAI_API_KEY}
