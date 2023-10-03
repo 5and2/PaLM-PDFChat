@@ -49,3 +49,4 @@ openai
 ffprobe
 streamlit_extras
 unstructured
+python-dotenv
