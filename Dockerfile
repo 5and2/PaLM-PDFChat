@@ -1,23 +1,10 @@
-# Use an official Python runtime as a parent image
-FROM python:3.12-slim as builder
+FROM python:3.7-slim
 
-# Set environment variables
-ENV PYTHONUNBUFFERED 1
-
-# Create and set the working directory
 WORKDIR /app
 
-# Copy the requirements file into the container
-COPY requirements.txt /app/
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install the Python dependencies
-RUN pip install -r requirements.txt
+COPY . .
 
-# Use a second stage for the actual application
-FROM builder as app
-
-# Copy the application code into the container
-COPY . /app/
-
-# Run the Streamlit web app
 CMD ["streamlit", "run", "PaLM_ChatPDF.py"]
