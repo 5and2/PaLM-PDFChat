@@ -18,7 +18,7 @@ jsonschema-specifications==2023.7.1
 mdurl==0.1.2
 multidict==6.0.4
 numpy==1.25.2
-openai==0.28.0  # Remove one of the 'openai' entries if not needed
+openai==0.28.0
 packaging==23.1
 pandas==2.1.0
 protobuf==4.24.3
@@ -45,3 +45,7 @@ toolz==0.12.0
 tzdata==2023.3
 tzlocal==4.3.1
 urllib3==2.0.4
+openai
+ffprobe
+streamlit_extras
+unstructured
