@@ -51,3 +51,4 @@ ffprobe
 streamlit_extras
 unstructured
 langchain
+google.generativeai
