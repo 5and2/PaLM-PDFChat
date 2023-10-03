@@ -50,4 +50,4 @@ openai
 ffprobe
 streamlit_extras
 unstructured
-
+langchain
