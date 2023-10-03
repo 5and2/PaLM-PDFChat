@@ -1,8 +1,8 @@
-version: '3'
+version: '3.8'
 services:
   chat-pdf:
     build:
-      context: ./  # Path to the directory containing Dockerfile
+        dockerfile: Dockerfile
     ports:
       - "8501:8501"
     environment:
